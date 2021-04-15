@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Revolutionary Fonts</title>
+	<meta charset="utf-8" />
+<!-- 	<link rel="icon" type="image/gif" href="favicon.gif">
+-->	<link rel="stylesheet" type="text/css" href="main.css">
+
+<!--This Loads the Light Theme Style--> 
+		<!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@4/themes/light.css"/>
+		<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+		<script>
+			Weglot.initialize({
+				api_key: 'wg_fbaa52e6f89968f21b349566f5cc89d17'
+			});
+		</script> -->
+
+
+	</head>
+
+	<body style="background-color:yellow;">
+
+		<!--From this, Before </Body> tag--> 
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fontsampler-js@0.0.15/dist/fontsampler.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fontsampler-js@0.0.15/dist/fontsampler-skin.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fontsampler-js@0.0.15/dist/fontsampler-skin.css">
+
+		<script src="https://unpkg.com/popper.js@1"></script>
+		<script src="https://unpkg.com/tippy.js@4"></script>
+		<div id="tester"></div>
+		<style type="text/css">
+/* Fontsampler provides classes for when a font is loading (e.g. to display 
+a spinner or fade out the text tester while the font is loading) */
+.fontsamplerjs.loading {…}
+
+/* If you use the lazyload option you can use this class to change appearance
+while some fonts are still loading in the background */
+.fontsamplerjs.preloading {…}
+
+/* The Fontsampler has initialized */
+.fontsamplerjs.fontsampler-initiallized {…}
+
+/* When Fontsampler groups items together as per the definitions (nested arrays)
+in the options attribute, those wrappers will have this class */
+.fsjs-wrapper {…}
+
+/* Any UI element (controls, tester input) */
+.fsjs-block {color: #111111; margin: auto; font-family: serif;}
+
+/* All UI elements have their key as class */
+.fsjs-block-fontsize,
+.fsjs-block-tester,
+… {}
+
+/* All UI types have a class, e.g. slider, dropdown, buttongroup, checkboxes, textarea */
+.fsjs-block-type-buttongroup {…}
+
+/* UI elements with labels have markup for the label and it’s content */
+.fsjs-block-fontsize [data-fsjs-for=fontsize] {}
+.fsjs-block-fontsize [data-fsjs-for=fontsize] .fsjs-label-text {font-size: 15px}
+.fsjs-block-fontsize [data-fsjs-for=fontsize] .fsjs-label-value {font-size: 15px}
+.fsjs-block-fontsize [data-fsjs-for=fontsize] .fsjs-label-unit {font-size: 15px}
+</style>
+
+<script>
+	var options = {
+		lazyload: true,
+
+    // This sets the UI element’s order and groupings
+    order: ["tester", ["fontsize", "lineheight", "fontfamily"]],
+    initialText: "I FEEL LIKE TYPOGRAPHY COMES WITH RULES AND EXPECTATIONS THAT WE TAKE FOR GRANTED.  TYPE IS USED TO CONVEY INFORMATION, AND WE TEND TO LOOK THROUGH IT TO WHATEVER IT’S COMMUNICATING. MAKING IT BREAK OUT OF THOSE EXPECTATIONS DOES TRIGGER A DIFFERENT INTERACTION, WHICH IS SORT OF REVOLUTIONARY. QUESTIONING THE VALUES BEHIND WHAT IS CONSIDERED GOOD TYPOGRAPHY, FOR EXAMPLE, BEING UNOBTRUSIVE, CLEAR, OR HAVING A CERTAIN COMPREHENSIBLE UNDERSTANDABLE HIERARCHY, THEN THROWING THOSE THINGS OUT THE WINDOW. WHAT ARE OTHER POSSIBILITIES FOR TYPOGRAPHY? EVEN THAT SMALL SCALE CAN EXTEND TO OTHER OPPORTUNITIES IN COMMUNICATION MORE BROADLY, IF WE BREAK OUT OF THE SYSTEMS THAT ARE THERE, THAT PEOPLE ARE TAUGHT TO ",
+    // This defines UI element options that differ from the defaults
+    ui: {
+    	fontsize: {
+    		init: 40,
+    		step: 1,
+    		max: 300,
+    		unit: "px",
+    	},
+    	lineheight: {
+    		min: 20,
+    		step: 1,
+    		max: 200,
+    	},
+
+    	letterspacing: {
+    		unit: "em",
+    		init: 0,
+    		min: -1,
+    		max: 1,
+    		step: 0.01,
+    		label: "Letterspacing"
+    	},
+
+
+
+
+
+    	alignment: {
+        // Choices can an Array of strings used both as value and display label
+        // or the strings are separated by | to use as value|Display label
+        choices: ["left|Left", "center|Centered", "right|Right"],
+
+        // Has to be one of the above choices
+        init: "left",
+
+        label: "Alignment"
+    },
+
+        // Instead of defining the specifics of a ui element,
+        // simply setting in to true will make it
+        // get rendered in the UI with defaults
+        fontfamily: true,
+    }
+    
+}
+
+
+var fonts = [
+
+{ 
+	name: "Family",
+
+	files: [
+	"https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/Untitled1.woff",
+	]
+
+},
+
+{ 
+	name: "Pineapple",
+
+	files: [
+	"https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/Pineapple.woff",
+	]
+
+},
+
+// { 
+// 	name: "111-RTO",
+
+// 	files: [
+// 	"https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/111-RTO.woff",
+// 	]
+
+// },
+
+{ 
+    name: "Guava Hooks",
+
+    files: [
+    "https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/Guava-Hooks.woff",
+    ]
+
+},
+
+{ 
+    name: "Kanz",
+
+    files: [
+    "https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/Kanz.woff",
+    ]
+
+},
+
+{ 
+    name: "LIQUIDFONT",
+
+    files: [
+    "https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/LIQUIDFONT.woff",
+    ]
+
+},
+
+{ 
+    name: "buts",
+
+    files: [
+    "https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/RoyT.woff",
+    ]
+
+},
+
+{ 
+    name: "butterfly grooves",
+
+    files: [
+    "https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/butterfly-grooves.woff",
+    ]
+
+},
+
+{ 
+    name: "etc.",
+
+    files: [
+    "https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/etc..woff",
+    ]
+
+},
+
+{ 
+    name: "maracuja",
+
+    files: [
+    "https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/maracuja.woff",
+    ]
+
+},
+
+{ 
+    name: "milkshake",
+
+    files: [
+    "https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/milkshake.woff",
+    ]
+
+},
+
+{ 
+    name: "peach",
+
+    files: [
+    "https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/revfonts/peach.woff",
+    ]
+
+},
+
+
+]
+
+
+
+
+var fs = new Fontsampler(document.getElementById("tester"), fonts, options)
+// Initiate the skin by passing the Fontsampler instance to it
+FontsamplerSkin(fs)
+
+// Only then init the Fontsampler
+fs.init()
+</script>
+
+<!--Tippy JS Settings--> 
+<script>
+tippy('.tippy', {             // Use class or id
+  animation: 'scale',         // See docs for more options (there are a few nice ones 😉)
+  duration: 200,              // Duration for ToolTip Animation
+  arrow: true,                // Add ToolTip Arrow
+  delay: [0, 50],             // First # = delay in, second # = delay out
+  arrowType: 'sharp',         // Sharp or 'round' or remove for none
+  theme: 'light',             // Dark is the default
+  maxWidth: 220,              // Max width in pixels for the tooltip
+})
+</script>
+
+
+</body>
+</html>
