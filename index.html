@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Forbidden Anchorage</title>
+	<title>font tester</title>
 	<meta charset="utf-8" />
 <!-- 	<link rel="icon" type="image/gif" href="favicon.gif">
 -->	<link rel="stylesheet" type="text/css" href="main.css">
@@ -18,7 +18,7 @@
 
 	</head>
 
-	<body>
+	<body style="background-color:white;">
 
 		<!--From this, Before </Body> tag--> 
 
@@ -46,7 +46,7 @@ in the options attribute, those wrappers will have this class */
 .fsjs-wrapper {…}
 
 /* Any UI element (controls, tester input) */
-.fsjs-block {color: #111111; margin: auto; font-family: serif;}
+.fsjs-block {color: black; margin: auto; font-family: serif;}
 
 /* All UI elements have their key as class */
 .fsjs-block-fontsize,
@@ -68,7 +68,7 @@ in the options attribute, those wrappers will have this class */
 		lazyload: true,
 
     // This sets the UI element’s order and groupings
-    order: ["tester", ["fontsize", "lineheight", "fontfamily"]],
+    order: ["fontfamily", ["fontsize", "letterspacing", "lineheight", "alignment"], "tester"],
     initialText: "(1) Explosives anchorages and, where established, surrounding forbidden anchorage zones, are temporarily activated as needed by the Captain of the Port. When not activated, explosives anchorages and surrounding forbidden anchorage zones become part of the general anchorage which encompasses them or, if not located within the boundaries of a general anchorage, become available for general navigation.",
     // This defines UI element options that differ from the defaults
     ui: {
@@ -159,7 +159,7 @@ var fonts = [
 	name: "Lo Rebsz",
 
 	files: [
-	"https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/Lo-Rebsz.woff",
+	"https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/lo-rebsz.woff",
 	]
 
 },
