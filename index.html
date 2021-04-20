@@ -68,20 +68,21 @@ in the options attribute, those wrappers will have this class */
 		lazyload: true,
 
     // This sets the UI element’s order and groupings
-    order: ["fontfamily", ["fontsize", "letterspacing", "lineheight", "alignment"], "tester"],
+    order: ["fontfamily", ["fontsize", "letterspacing", "lineheight"], "alignment", "tester"],
     initialText: "(1) Explosives anchorages and, where established, surrounding forbidden anchorage zones, are temporarily activated as needed by the Captain of the Port. When not activated, explosives anchorages and surrounding forbidden anchorage zones become part of the general anchorage which encompasses them or, if not located within the boundaries of a general anchorage, become available for general navigation.",
     // This defines UI element options that differ from the defaults
     ui: {
     	fontsize: {
     		init: 40,
     		step: 1,
+    		min: 1,
     		max: 300,
     		unit: "px",
     	},
     	lineheight: {
-    		min: 20,
+    		min: 0,
     		step: 1,
-    		max: 200,
+    		max: 300,
     	},
 
     	letterspacing: {
@@ -159,7 +160,7 @@ var fonts = [
 	name: "Lo Rebsz",
 
 	files: [
-	"https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/lo-rebsz.woff",
+	"https://cdn.jsdelivr.net/gh/troytaylorw/font-tester@main/Lo-Rebsz.woff",
 	]
 
 },
