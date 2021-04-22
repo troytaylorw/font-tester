@@ -1,4 +1,3 @@
-# font-tester
-font tester
-test this font
+# forbidden-font-tester
+
 https://troytaylorw.github.io/font-tester
